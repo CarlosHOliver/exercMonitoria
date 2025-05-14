@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Práticos - Algoritmos e Programação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary-color: #08e38d;
+            --primary-dark: #06c578;
+            --primary-light: #a0f5d3;
+            --secondary-color: #e3086e;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .navbar {
+            background-color: var(--dark-color);
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+        
+        .bg-primary-light {
+            background-color: var(--primary-light);
+        }
+        
+        .lesson-card {
+            transition: transform 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .exercise {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--primary-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        
+        code {
+            color: #e3086e;
+        }
+        
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: var(--primary-color);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 40px;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+        
+        .answer {
+            background-color: var(--primary-light);
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Exercícios Práticos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#algoritmos">Algoritmos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#linguagens">Linguagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dados">Dados</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Exercícios Práticos</h1>
+            <p class="lead">Teste seus conhecimentos sobre algoritmos e programação</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Algoritmos Section -->
+        <section id="algoritmos" class="mb-5">
+            <h2 class="mb-4">🧠 AULA 3 – Algoritmos</h2>
+            <div class="card lesson-card">
+                <div class="card-header">
+                    <i class="bi bi-cpu me-2"></i>Exercícios sobre Algoritmos
+                </div>
+                <div class="card-body">
+                    <div class="exercise">
+                        <div class="question">1. O que é um algoritmo?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta1">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta1">
+                            <div class="answer">Uma sequência de passos finitos para resolver um problema.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">2. O que significa "início" e "fim" em um pseudocódigo?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta2">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta2">
+                            <div class="answer">Delimitam o começo e o término do algoritmo.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">3. Escreva um pseudocódigo simples que calcule a soma de dois números.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta3">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta3">
+                            <div class="answer">
+                                <pre>Início
+  Leia A
+  Leia B
+  S ← A + B
+  Escreva S
+Fim</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">4. O que é a etapa de entrada em um algoritmo?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta4">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta4">
+                            <div class="answer">Onde o algoritmo recebe dados do usuário.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">5. Escreva um algoritmo que diga se um número é maior que 10.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta5">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta5">
+                            <div class="answer">
+                                <pre>Início
+  Leia N
+  Se N > 10 então
+    Escreva "Maior que 10"
+  Senão
+    Escreva "Não é maior que 10"
+Fim</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">6. Para que serve a estrutura condicional "Se... então"?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta6">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta6">
+                            <div class="answer">Para tomar decisões com base em uma condição.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">7. Qual comando usamos para repetir instruções?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta7">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta7">
+                            <div class="answer">"Enquanto", "Para", ou "Repita".</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">8. Dê um exemplo de algoritmo com laço de repetição.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta8">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta8">
+                            <div class="answer">
+                                <pre>Início
+  Para i de 1 até 5 faça
+    Escreva i
+  FimPara
+Fim</pre>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">9. O que é pseudocódigo?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta9">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta9">
+                            <div class="answer">Representação textual de um algoritmo, parecida com linguagem de programação, mas mais simples.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">10. Qual a importância de representar algoritmos com fluxogramas ou pseudocódigo?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta10">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta10">
+                            <div class="answer">Facilita o entendimento lógico antes da programação real.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linguagens Section -->
+        <section id="linguagens" class="mb-5">
+            <h2 class="mb-4">💻 AULA 4 – Linguagens de Programação</h2>
+            <div class="card lesson-card">
+                <div class="card-header">
+                    <i class="bi bi-code-square me-2"></i>Exercícios sobre Linguagens de Programação
+                </div>
+                <div class="card-body">
+                    <div class="exercise">
+                        <div class="question">1. O que é uma linguagem de programação?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta11">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta11">
+                            <div class="answer">Um meio de comunicação entre humanos e computadores.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">2. Dê um exemplo de linguagem de programação de alto nível.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta12">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta12">
+                            <div class="answer">Python, Java, C++, etc.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">3. Qual a principal diferença entre compiladores e interpretadores?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta13">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta13">
+                            <div class="answer">Compilador traduz tudo antes de executar; interpretador executa linha por linha.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">4. Qual paradigma é baseado em comandos sequenciais?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta14">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta14">
+                            <div class="answer">Paradigma imperativo.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">5. O que é linguagem de baixo nível?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta15">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta15">
+                            <div class="answer">Linguagens mais próximas da linguagem da máquina, como Assembly.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">6. Qual paradigma usa o conceito de objetos e classes?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta16">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta16">
+                            <div class="answer">Paradigma orientado a objetos.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">7. Para que serve o paradigma funcional?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta17">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta17">
+                            <div class="answer">Para trabalhar com funções matemáticas puras, sem efeitos colaterais.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">8. Dê um exemplo de linguagem usada para web.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta18">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta18">
+                            <div class="answer">JavaScript.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">9. Qual é o uso típico da linguagem COBOL hoje?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta19">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta19">
+                            <div class="answer">Sistemas bancários e mainframes.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">10. Qual vantagem das linguagens de alto nível sobre as de baixo nível?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta20">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta20">
+                            <div class="answer">São mais fáceis de entender e programar.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dados Section -->
+        <section id="dados" class="mb-5">
+            <h2 class="mb-4">🧮 AULA 5 – Abstração de Dados</h2>
+            <div class="card lesson-card">
+                <div class="card-header">
+                    <i class="bi bi-database me-2"></i>Exercícios sobre Abstração de Dados
+                </div>
+                <div class="card-body">
+                    <div class="exercise">
+                        <div class="question">1. O que é abstração de dados?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta21">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta21">
+                            <div class="answer">É esconder os detalhes internos e mostrar apenas o necessário.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">2. Dê um exemplo da vida real que represente abstração.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta22">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta22">
+                            <div class="answer">Dirigir um carro sem saber como o motor funciona.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">3. O que é um vetor (array)?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta23">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta23">
+                            <div class="answer">Estrutura de dados com posições fixas e acesso por índice.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">4. Qual a principal diferença entre vetor e lista ligada?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta24">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta24">
+                            <div class="answer">Vetor tem tamanho fixo e acesso direto; lista ligada é dinâmica e usa ponteiros.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">5. O que é uma pilha (stack)?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta25">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta25">
+                            <div class="answer">Estrutura onde o último a entrar é o primeiro a sair (LIFO).</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">6. O que é uma fila (queue)?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta26">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta26">
+                            <div class="answer">Estrutura onde o primeiro a entrar é o primeiro a sair (FIFO).</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">7. Qual estrutura representa uma hierarquia de dados?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta27">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta27">
+                            <div class="answer">Árvore.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">8. Explique o funcionamento básico de uma pilha com um exemplo.</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta28">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta28">
+                            <div class="answer">Pilha de pratos — só dá pra tirar o último que foi colocado.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">9. Qual estrutura seria melhor para implementar um histórico de ações?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta29">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta29">
+                            <div class="answer">Pilha (para desfazer ações).</div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <div class="question">10. Por que as estruturas de dados são importantes?</div>
+                        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#resposta30">Ver Resposta</button>
+                        <div class="collapse mt-2" id="resposta30">
+                            <div class="answer">Porque ajudam a organizar e acessar dados de forma eficiente nos programas.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-2">Feito por Carlos Henrique - Eng. Computação</p>
+            <a href="https://www.linkedin.com/in/carlosoliver/" target="_blank" class="social-icon">
+                <i class="bi bi-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
